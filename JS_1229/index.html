@@ -6,22 +6,24 @@
   <title>Guess the Number Game</title>
 
   <!-- 1. Include CSS styles -->
-  
+  <link rel="stylesheet" href="guessNumber.css">
   
   <!-- 2. Include JavaScript file -->
+  
   
 </head>
 <body>
 
+  <script src = "guessNumber.js"></script>
   <div class="container">
     <h1>Guess the Number Game</h1>
     <p>Guess a number between 1 and 10:</p>
 
     <!-- 3. Trigger this button with the Enter Key. -->
-    <input type="number" id="userGuess" placeholder="Enter your guess">
+    <input type="number" id="userGuess" placeholder="Enter your guess" onkeydown="handleEnter(event)">
     <button onclick="checkGuess()">Check Guess</button>
 
-    <div id="result"></div>
+    <div id="result">  </div>
   </div>
 
 </body>
